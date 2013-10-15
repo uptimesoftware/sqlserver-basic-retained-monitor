@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uptime xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.uptimesoftware.com/erdc/erdc erdc"
+        xmlns="http://www.uptimesoftware.com/erdc/erdc"
+        xmlns:upt="http://www.uptimesoftware.com/erdc/erdc" version="4.0" target_grouping="other">
+    <class>MS SQL Query</class>
+    <exec>com.uptimesoftware.uptime.erdc.MonitorSQLRetained</exec>
+    <elements>
+        <element name="port" parameter_type="input" data_type="integer" gui_basic="1" range_type="0">
+            <control_options> size:2 </control_options>
+            <default_value>1433</default_value>
+            <short_description>SQL Server Port</short_description>
+            <long_description>The port that SQL Server is listening on</long_description>
+            <validation_rule>
+                <integer/>
+            </validation_rule>
+            <error_message>
+                <integer> The port must be an integer value </integer>
+            </error_message>
+            <gui_type>
+                <integer/>
+            </gui_type>
+        </element>
+        <element name="username" parameter_type="input" data_type="string" gui_basic="1"
+			range_type="0">
+            <control_options>width:20em</control_options>
+            <default_value/>
+            <short_description> Username </short_description>
+            <long_description> Username to login to server with </long_description>
+            <validation_rule/>
+            <error_message/>
+            <gui_type>
+                <string/>
+            </gui_type>
+        </element>
+        <element name="password" parameter_type="input" data_type="string" gui_basic="1"
+			range_type="0">
+            <control_options>width:20em</control_options>
+            <default_value/>
+            <short_description> Password </short_description>
+            <long_description> Password to login to server with </long_description>
+            <validation_rule/>
+            <error_message/>
+            <gui_type>
+                <password/>
+            </gui_type>
+        </element>
+        <element name="instance" parameter_type="input" data_type="string" gui_basic="1"
+			range_type="0">
+            <control_options>width:40em</control_options>
+            <default_value/>
+            <short_description>Instance</short_description>
+            <long_description>Server instance to connect to</long_description>
+            <validation_rule/>
+            <error_message/>
+            <gui_type>
+                <string/>
+            </gui_type>
+        </element>
+        <element name="database" parameter_type="input" data_type="string" gui_basic="1"
+			range_type="0">
+            <control_options>width:40em</control_options>
+            <default_value/>
+            <short_description>Database </short_description>
+            <long_description>Database to connect to </long_description>
+            <validation_rule/>
+            <error_message/>
+            <gui_type>
+                <string/>
+            </gui_type>
+        </element>
+        <element name="script" parameter_type="input" data_type="string" gui_basic="1"
+			range_type="0">
+            <control_options>rows:4; cols:40</control_options>
+            <default_value/>
+            <short_description> Script </short_description>
+            <long_description> Script to execute on the server </long_description>
+            <validation_rule/>
+            <error_message/>
+            <gui_type>
+                <textarea/>
+            </gui_type>
+        </element>
+        <element name="numberoutput" parameter_type="output" data_type="integer" gui_basic="1" range_type="0">
+            <control_options>size:40</control_options>
+            <default_value/>
+            <short_description>Numeric Result</short_description>
+            <long_description>The (optional) numeric value to evaluate in the returned data</long_description>
+            <validation_rule/>
+            <error_message/>
+            <gui_type>
+                <integer/>
+            </gui_type>
+        </element>
+        <element name="textoutput" parameter_type="output" data_type="string" gui_basic="1" range_type="0">
+            <control_options>size:40</control_options>
+            <default_value/>
+            <short_description>Text Result</short_description>
+            <long_description>The (optional) text to look for in the returned data</long_description>
+            <validation_rule/>
+            <error_message/>
+            <gui_type>
+                <string/>
+            </gui_type>
+        </element>
+        <element name="timer" parameter_type="output" data_type="integer" gui_basic="0" range_type="0" units="ms">
+            <control_options>size:8</control_options>
+            <default_value />
+            <short_description>Response time</short_description>
+            <long_description>Response time in ms</long_description>
+            <validation_rule />
+            <error_message />
+            <gui_type>
+                <integer />
+            </gui_type>
+        </element>
+    </elements>
+    <help/>
+</uptime>
