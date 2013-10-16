@@ -7,17 +7,17 @@ See http://uptimesoftware.github.io for more information.
 
 ### Category
 
-{ page.category }}
+database
 
 ### Version Compatibility
 
 
   
-    * SQL Server Basic (with retained data) Monitor 2.1 - 7.2, 7.1, 7.0, 6.0
+* SQL Server Basic (with retained data) Monitor 2.1 - 7.2, 7.1, 7.0, 6.0
   
 
   
-    * SQL Server Basic (with retained data) Monitor 1.0 - 5.5, 5.4, 5.3
+* SQL Server Basic (with retained data) Monitor 1.0 - 5.5, 5.4, 5.3
   
 
 
@@ -41,12 +41,29 @@ None; no agent required
 
 
 ### Input Variables
-* sql server port* user name* password* instance* database to connect to* sql script
+
+* sql server port
+
+* user name
+
+* password
+
+* instance
+
+* database to connect to
+
+* sql script
+
 
 ### Output Variables
 
-* numeric result* text result
+
+* numeric result
+
+* text result
+
 
 ### Languages Used
+
 * Java
 
